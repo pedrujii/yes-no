@@ -30,7 +30,7 @@ body{
     height: 100%;
 }
 
-.content{
+.container{
     height: 100vh;
     width: 100%;
     display: grid;
@@ -89,4 +89,27 @@ button{
     display: flex;
     justify-content: center;
     gap: 4em;
+}
+
+@media screen and (max-width:900px) {
+    .square{
+        width: 22em;
+        border: 1px solid aliceblue;
+    }
+    span{
+        font-size: 1.8em;
+    }
+    span::after{
+        content: "";      
+        animation: none;
+        border-left: none;
+    }
+    button{
+        height: 4em;
+        width: 7em;
+        font-size: 1em;
+    }
+    .buttons{
+        gap: 2em;
+    }
 }
