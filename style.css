@@ -97,7 +97,7 @@ button{
         border: 1px solid aliceblue;
     }
     span{
-        font-size: 1.8em;
+        font-size: 2em;
     }
     span::after{
         content: "";      
