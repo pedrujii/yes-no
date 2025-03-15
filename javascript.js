@@ -11,6 +11,12 @@ function desvia(t){
     }
     //
 
-function sim(){
-    alert("Eu sei :)")
+function mostrarAlerta() {
+    Swal.fire({
+        title: 'Eu sei :)',
+        confirmButtonText: 'Fechar',
+        background: '#1e1e1e', // Cor de fundo escura
+        color: '#ffffff', // Cor do texto
+        confirmButtonColor: '#44444', // Cor do botão de confirmação
+    });
 }

@@ -14,24 +14,15 @@
     }
 }
 
-@keyframes m {
+@keyframes cursor{
     0%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: 12.5em;
-    }
-}
-
-@keyframes poin{
-    0%{
-        opacity: 0;
+        border-left: 2px solid aliceblue;
     }
     50%{
-        opacity: 1;
+        border-left: 2px solid rgb(23, 0, 53);
     }
     100%{
-        opacity: 0;
+        border-left: 2px solid aliceblue;
     }
 }
 
@@ -48,6 +39,10 @@ body{
     background-color: rgb(18, 14, 40);
 }
 
+#tit{
+    height: 1em;
+}
+
 span{
     font-family: monospace;
     font-size: 2.5em;
@@ -57,13 +52,11 @@ span{
 span::after{
     content: "";
     position: absolute;
-    height: 1.3em;
+    height: 1.2em;
     background-color: rgb(23, 0, 53);        
-    animation: apar 1s linear;
+    animation: apar 1.5s linear , cursor 0.8s infinite;
     border-left: 2px solid aliceblue;
 }
-
-
 
 .square{
     box-shadow: 0px 0px 20px rgb(111, 0, 170);
@@ -75,8 +68,8 @@ span::after{
     color: aliceblue;
     border: 2px solid aliceblue;
     display: grid;
-    flex-wrap: wrap;
     justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
@@ -89,6 +82,7 @@ button{
     border: 3px solid aliceblue;
     font-weight: bolder;
     font-size: 1.3em;
+    cursor: pointer;
 }
 
 .buttons{
